@@ -1,0 +1,16 @@
+@import'./utils/variables';
+@import'./base/reset';
+@import'./base/common.scss';
+@import'./utils/hidden';
+@import'./components/container';
+
+@import'./layouts/header';
+@import'./layouts/hero';
+@import'./layouts/adventage';
+@import'./layouts/activity';
+@import'./layouts/team';
+@import'./layouts/clients';
+@import'./layouts/footer';
+@import'./layouts/follow-form';
+@import'./layouts/portfolio';
+@import'./components/modal';

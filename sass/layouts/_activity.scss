@@ -1,0 +1,50 @@
+.activity-list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.activity {
+    padding-top: 0;
+}
+
+.activity-item {
+    width: calc((100% - 60px) / 3);
+}
+
+.activity-item {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.activity-title {
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    line-height: 1.16;
+    font-weight: 700;
+    color: var(--title-color);
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.activity-after-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.activity-position {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    left: 0px;
+    bottom: 0;
+    background: rgba(47, 48, 58, 0.8);
+}
