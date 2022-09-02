@@ -5,14 +5,14 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-color);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .clients__link {
-    width: 170px;
+    display: flex;
+    width: 210px;
     height: 92px;
     border: 1px solid #afb1b8;
-    display: flex;
     align-items: center;
     justify-content: center;
     fill: #afb1b8;
@@ -25,11 +25,21 @@
     fill: var(--btn-background-color);
     border-color: var(--accent-color);
     }
+    @media screen and (min-width:768px) {
+    width: 226px;
+    height: 92px;}
+    @media screen and (min-width:1200px) {
+    width: 170px;
+    height: 92px;
+    }
 }
 
 .clients {
     display: flex;
-    column-gap: 30px;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+    
 }
 
 

@@ -1,14 +1,23 @@
 .team {
     display: flex;
-    column-gap: 30px;
+    flex-wrap: wrap;
+    gap: 30px;
 }
+
 
 .team__item {
     background: #ffffff;
-    width: calc((100% - 90px) / 4);
+    width: 100%;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
     border-radius: 0px 0px 4px 4px;
+    @media screen and (min-width:768px) {
+    width: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width:1200px) {
+    width: calc((100% - 90px) / 4);
+    }
+    
 }
 
 
@@ -17,19 +26,21 @@
     background-color: #f5f4fa;
 }
 
+
+
 .section__title {
     font-size: 36px;
     letter-spacing: 0.03em;
     font-weight: 700;
     line-height: 1.16;
     color: var(--title-color);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
 .team__content {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
     text-align: center;
 }
 

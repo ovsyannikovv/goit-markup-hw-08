@@ -1,14 +1,23 @@
 .activity-list {
     display: flex;
-    column-gap: 30px;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .activity {
-    padding-top: 0;
+    @media screen and (min-width:1200px) {
+            padding-top: 0;
+        }
 }
 
 .activity-item {
+    width: 100%;
+    @media screen and (min-width:768px) {
+    width: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width:1200px) {
     width: calc((100% - 60px) / 3);
+    }
 }
 
 .activity-item {

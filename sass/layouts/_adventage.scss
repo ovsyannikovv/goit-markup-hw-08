@@ -1,21 +1,40 @@
 .adventage-list {
     display: flex;
+    flex-wrap: wrap;
+    @media screen and (min-width:768px) {
+    gap: 30px;
+    }
 }
 
-.adventage-item:not(:last-child) {
-    margin-right: 30px;
-}
+
 
 .advantage-icon-block {
-    width: 270px;
-    height: 120px;
+    // width: 270px;
+    // height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #f5f4fa;
     border-radius: 4px;
     margin-bottom: 30px;
+    width: 100%;
+    @media screen and (min-width:1200px) {
+    width: 270px;
+    height: 120px;
+    }
+    
 }
+   
+
+.adventage-item {
+    @media screen and (min-width:768px) {
+    width: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width:1200px) {
+    width: calc((100% - 90px) / 4);
+    }
+}
+
 
 .adventage-title {
     font-size: 14px;
@@ -26,6 +45,7 @@
     color: var(--title-color);
     margin-bottom: 10px;
 }
+
 
 .adventage-text {
     line-height: 1.71;
