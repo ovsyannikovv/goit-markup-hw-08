@@ -531,7 +531,6 @@ body {
 
 .footer-address {
   margin-top: 20px;
-  margin-bottom: 60px;
 }
 
 .footer-web,
@@ -552,6 +551,10 @@ body {
   letter-spacing: 0.03em;
   font-style: normal;
   color: var(--btn-accent-color);
+}
+
+.footer-item {
+  margin-top: 9px;
 }
 
 .footer-link {
@@ -601,7 +604,7 @@ body {
 }
 
 .footer-soc-block {
-  margin-bottom: 60px;
+  margin-top: 60px;
 }
 
 .foot-container {
@@ -618,6 +621,13 @@ body {
     align-items: baseline;
   }
 }
+@media screen and (min-width: 1200px) {
+  .foot-container {
+    flex-direction: row;
+    text-align: justify;
+    align-items: baseline;
+  }
+}
 
 .follow-form {
   display: flex;
@@ -625,13 +635,11 @@ body {
 }
 
 .follow-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  margin-top: 60px;
 }
+
 .follow-input {
-  width: 450px;
+  width: 100%;
   height: 50px;
   font-size: 14px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -704,6 +712,12 @@ body {
   transition-property: border-color, color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--timing-function);
+}
+@media screen and (min-width: 1200px) {
+  .follow-input {
+    width: 358px;
+    margin-right: 12px;
+  }
 }
 
 .follow-btn {

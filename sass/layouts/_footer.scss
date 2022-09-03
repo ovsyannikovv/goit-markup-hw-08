@@ -2,16 +2,14 @@
     background: var(--background-color);
     padding-top: 60px;
     padding-bottom: 60px;
+   
 }
 
 .footer-address {
     margin-top: 20px;
-    margin-bottom: 60px;
 }
 
-.foot-contact {
-    // flex-grow: 1;
-}
+
 
 .footer-web,
 .footer-studio {
@@ -34,7 +32,7 @@
 }
 
 .footer-item {
-    // margin-top: 9px;
+    margin-top: 9px;
 }
 
 .footer-link {
@@ -90,8 +88,8 @@
 
 
 .footer-soc-block {
-    margin-bottom: 60px;
-    // margin-left: 70px;
+
+margin-top: 60px;
 }
 
 .foot-container {
@@ -101,9 +99,14 @@
     text-align: center;
     align-items: center;
     @media screen and (min-width:768px) {
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: baseline;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    }
+    @media screen and (min-width:1200px) {
+    flex-direction: row;
+    text-align: justify;
+    align-items: baseline;
     }
 
-}
+ }

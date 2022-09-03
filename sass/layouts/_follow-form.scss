@@ -5,15 +5,10 @@
 }
 
 .follow-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    @media screen and (min-width:768px) {
+    
+margin-top: 60px;
 
-    }
-   
-   
+    
     // margin-left: 93px;
 }
 
@@ -24,7 +19,7 @@
 
 .follow-input {
     // width: 358px;
-    width: 450px;
+    width: 100%;
     height: 50px;
     font-size: 14px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -33,7 +28,6 @@
     background: transparent;
     padding-left: 10px;
     color: var(--btn-accent-color);
-    // margin-right: 12px;
     margin-bottom: 20px;
     &:focus {
     border-color: var(--accent-color);
@@ -58,6 +52,10 @@
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--timing-function);
    }
+        @media screen and (min-width:1200px) {
+            width: 358px;
+            margin-right: 12px;
+        }
    
   
 }
