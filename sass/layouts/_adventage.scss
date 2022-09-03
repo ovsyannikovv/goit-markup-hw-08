@@ -1,6 +1,7 @@
 .adventage-list {
     display: flex;
     flex-wrap: wrap;
+    
     @media screen and (min-width:768px) {
     gap: 30px;
     }
@@ -9,8 +10,6 @@
 
 
 .advantage-icon-block {
-    // width: 270px;
-    // height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,6 +26,7 @@
    
 
 .adventage-item {
+    width: 100%;
     @media screen and (min-width:768px) {
     width: calc((100% - 30px) / 2);
     }
