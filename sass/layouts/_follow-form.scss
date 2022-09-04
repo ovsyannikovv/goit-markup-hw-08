@@ -4,18 +4,10 @@
    
 }
 
-.follow-wrap {
-    
+.follow-wrap {   
 margin-top: 60px;
-
-    
-    // margin-left: 93px;
 }
 
-.follow-items {
-  
-
-}
 
 .follow-input {
     // width: 358px;
@@ -52,10 +44,10 @@ margin-top: 60px;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--timing-function);
    }
-        @media screen and (min-width:1200px) {
-            width: 358px;
-            margin-right: 12px;
-        }
+    @media screen and (min-width:1200px) {
+    width: 358px;
+    margin-right: 12px;
+    }
    
   
 }

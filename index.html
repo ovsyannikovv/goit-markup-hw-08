@@ -23,10 +23,10 @@
   <body>
     <header class="header">
       <div class="container header__container">
+        <a class="navigation__logo link" href="">
+          <span class="web">Web</span><span class="studio">Studio</span></a
+        >
         <nav class="navigation">
-          <a class="navigation__logo link" href="">
-            <span class="web">Web</span><span class="studio">Studio</span></a
-          >
           <ul class="navigation__list list">
             <li class="navigation__item">
               <a class="navigation__link navigation__link__current link" href="">Студія</a>
@@ -54,17 +54,60 @@
             >
           </li>
         </ul>
+        <button class="mob-open-btn" data-menu-open type="button">
+          <svg class="mob-btn-icon" width="40" height="40">
+            <use href="./img/icons.svg#icon-menu-mob"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="menu-mob is-hidden" data-menu>
+        <div class="container">
+          <button class="menu-close-btn" data-menu-close type="button">
+            <svg class="menu-close-icon" width="18" height="18">
+              <use href="./img/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <nav class="mob-navigation">
+            <ul class="mob-navigation-list list">
+              <li class="mob-navigation-item">
+                <a class="mob-navigation-link mob-navigation-link-current link" href="">Студія</a>
+              </li>
+              <li class="mob-navigation-item">
+                <a class="mob-navigation-link link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="mob-navigation-item">
+                <a class="mob-navigation-link link" href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="mob-contacts list">
+            <li class="mob-navigation-item">
+              <a class="mob-contacts-link link" href="mailto:info@devstudio.com">
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="mob-navigation-item">
+              <a class="mob-contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+          <ul class="mob-soc-list list">
+            <li class="mob-soc-item link"><a class="mob-soc-link link" href="">Instagram</a></li>
+            <li class="mob-soc-item link"><a class="mob-soc-link link" href="">Twitter</a></li>
+            <li class="mob-soc-item link"><a class="mob-soc-link link" href="">Facebook</a></li>
+            <li class="mob-soc-item link"><a class="mob-soc-link link" href="">LinkedIn</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button class="hero-btn" type="button" data-modal-open>Замовити послугу</button>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="adventage section">
+      <section class="adventage section">
         <h2 class="visually-hidden">Наші переваги</h2>
         <div class="container">
           <ul class="adventage-list list">
@@ -114,8 +157,8 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="activity section">
+      </section>
+      <section class="activity section">
         <div class="container">
           <h2 class="activity-title">Чим ми займаємося</h2>
           <ul class="activity-list list">
@@ -139,8 +182,8 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="section section__beckground">
+      </section>
+      <section class="section section__beckground">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
           <ul class="team list">
@@ -294,8 +337,8 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="section">
+      </section>
+      <section class="section">
         <div class="container">
           <h2 class="section__title">Постійні клієнти</h2>
           <ul class="clients list">
@@ -343,7 +386,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <footer class="footer">
         <div class="container foot-container">
           <div class="foot-contact">
@@ -422,7 +465,7 @@
         </div>
       </footer>
       <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
+        <div class="modal container">
           <button type="button" class="modal-btn" data-modal-close>
             <svg class="modal-icon" width="18" height="18">
               <use href="./img/icons.svg#icon-close-black"></use>
@@ -509,5 +552,6 @@
       </div>
     </main>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
