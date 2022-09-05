@@ -8,6 +8,7 @@
   --main-font: "Roboto", sans-serif;
   --transition-duration: 250ms;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --bg-gradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 }
 
 p,
@@ -28,7 +29,6 @@ ul {
 img {
   display: block;
   width: 100%;
-  max-width: 100%;
   height: auto;
 }
 
@@ -320,7 +320,7 @@ body {
 
 .hero {
   background-color: var(--background-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/bcg-img.jpg);
+  background-image: var(--bg-gradient), url(../img/hero-bg-mob.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -328,11 +328,32 @@ body {
   padding: 118px 0px;
   margin: 0 auto;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--bg-gradient), url(../img/hero-bg-mob-2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: var(--bg-gradient), url(../img/hero-bg-tab.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--bg-gradient), url(../img/hero-bg-tab-2x.jpg);
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
     font-size: 44px;
     padding: 200px 0;
+    background-image: var(--bg-gradient), url(../img/bcg-img.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--bg-gradient), url(../img/hero-bg-dt-2x.jpg);
   }
 }
 
@@ -955,8 +976,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  justify-content: center;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .project-btn-list {
+    justify-content: center;
+  }
 }
 
 .project-btn {
