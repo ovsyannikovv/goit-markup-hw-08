@@ -461,8 +461,19 @@ body {
   gap: 30px;
 }
 
+@media screen and (min-width: 480px) {
+  .activity {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .activity {
+    display: none;
+  }
+}
 @media screen and (min-width: 1200px) {
   .activity {
+    display: flex;
     padding-top: 0;
   }
 }
