@@ -5,6 +5,15 @@
    
 }
 
+.foot-contact {
+@media screen and (min-width:1200px) {
+flex-grow: 1;
+margin-right: 70px;
+}
+
+    
+}
+
 .footer-address {
     margin-top: 20px;
 }
@@ -88,8 +97,11 @@
 
 
 .footer-soc-block {
-
 margin-top: 60px;
+@media screen and (min-width:1200px) {
+margin-top: 0;
+margin-right: 93px;
+    }
 }
 
 .foot-container {
